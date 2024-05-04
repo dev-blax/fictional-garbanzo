@@ -5,6 +5,7 @@ import {
   Typography,
   Button,
   IconButton,
+  Collapse,
 } from "@material-tailwind/react";
  
 export function LoomNavbar() {
@@ -177,7 +178,7 @@ export function LoomNavbar() {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className="container mx-auto">
           {navList}
           <div className="flex items-center gap-x-1">
@@ -185,11 +186,11 @@ export function LoomNavbar() {
               <span>Log In</span>
             </Button>
             <Button fullWidth variant="gradient" size="sm" className="">
-              <span>Sign in</span>
+              <span>Free Trial</span>
             </Button>
           </div>
         </div>
-      </MobileNav>
+      </Collapse>
     </Navbar>
   );
 }

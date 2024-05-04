@@ -17,14 +17,14 @@ module.exports = withMT({
   theme: {
     extend: {},
     colors: {
-      'tangerine': '#f0810f',
-      'daffodil': '#e6df44',
-      'darknavy': '#011a27',
-      'blueberry': '#063852',
+      tangerine: "#f0810f",
+      daffodil: "#e6df44",
+      darknavy: "#011a27",
+      blueberry: "#063852",
     },
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("@vidstack/react/tailwind.cjs")],
 });

@@ -4,8 +4,12 @@ import { LoomNavbar } from "../../components/LoomNavbar";
 import StudentHero from "./components/StudentHero";
 
 import TeacherHero from "./components/TeacherHero";
-import PopularClasses from './components/PopularClasses'
-
+import PopularClasses from "./components/PopularClasses";
+import Brands from "./components/Brands";
+import Testimonials from "./components/Testimonials";
+import Services from "./components/Services";
+import GetInTouch from "./components/GetInTouch";
+import Footer from './components/Footer';
 
 function Home() {
   return (
@@ -14,31 +18,26 @@ function Home() {
 
       <StudentHero />
 
-      <div className=" mx-auto bg-gradient-to-t from-orange-500 to-orange-300  ">
-        <div className=" flex justify-between text-white py-5 font-semibold mx-auto max-w-7xl ">
-          <p className=" text-3xl">Duolingo</p>
+      {/* brands */}
+      <Brands />
 
-          <p className=" text-3xl">magic leap</p>
-
-          <p className=" text-3xl">magic leap</p>
-
-          <p className=" text-3xl">magic leap</p>
-
-          <p className=" text-3xl">magic leap</p>
-        </div>
-      </div>
+      {/* Services */}
+      <Services />
 
       {/* popular classes */}
       <PopularClasses />
-      
-      
 
       {/* teacher hero */}
       <TeacherHero />
 
-      {/*  */}
+      {/* Testimonials */}
+      <Testimonials />
 
-      
+      {/* Get in Touch  */}
+      <GetInTouch />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

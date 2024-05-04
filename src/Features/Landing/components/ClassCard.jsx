@@ -13,13 +13,13 @@ function ClassCard() {
       />
 
       <div className=" flex justify-between items-center mt-2 text-sm text-white mb-4">
-        <div className=" flex gap-1 items-center bg-tangerine px-2 py-1 rounded-md">
+        <div className=" flex gap-1 items-center bg-daffodil px-2 py-1 rounded-md">
           <FaDotCircle className=" text-sm" />
 
           <p> Web Design </p>
         </div>
 
-        <div className=" flex gap-2 items-center bg-tangerine rounded-md px-2 py-1 ">
+        <div className=" flex gap-2 items-center bg-daffodil rounded-md px-2 py-1 ">
           <FaStar />
           <p>4.9</p>
         </div>
