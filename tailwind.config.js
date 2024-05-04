@@ -21,7 +21,10 @@ module.exports = withMT({
       'daffodil': '#e6df44',
       'darknavy': '#011a27',
       'blueberry': '#063852',
-    }
+    },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+    },
   },
   plugins: [],
 });
