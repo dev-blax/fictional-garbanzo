@@ -19,8 +19,8 @@ import {
 
 function TeacherHero() {
   return (
-    <div className=" flex max-w-7xl mx-auto ">
-      <div className=" w-full flex flex-col justify-center gap-8">
+    <div className=" flex flex-col md:flex-row max-w-7xl mx-auto ">
+      <div className=" w-full flex flex-col text-center md:text-start px-4 md:px-0 py-4 md:py-0 justify-center gap-8">
         <div className="">
           <header className=" text-5xl font-bold mb-3 ">
             If you are a Certified man then,{" "}
@@ -35,12 +35,12 @@ function TeacherHero() {
           </p>
         </div>
 
-        <div>
+        <div className=" flex flex-col gap-5 items-center">
           <header className="text-5xl font-bold font-sans">
             {" "}
             Enjoy many perks
           </header>
-          <div className=" flex">
+          <div className=" flex flex-col md:flex-row">
             <List>
               <ListItem>
                 <ListItemPrefix>

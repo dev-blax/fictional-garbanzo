@@ -4,7 +4,7 @@ import { PiStudent } from "react-icons/pi";
 function Footer() {
   return (
     <footer className=" bg-gradient-to-tl from-daffodil  to-tangerine py-12">
-      <div className=" mx-auto max-w-7xl flex gap-8 text-white justify-around ">
+      <div className=" mx-auto max-w-7xl flex flex-col md:flex-row px-4 md:px-0 gap-8 text-white justify-around ">
         <div className=" w-full flex flex-col gap-2">
           <header className=" text-3xl "> Etech </header>
           <p>

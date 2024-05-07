@@ -18,7 +18,7 @@ function Testimonials() {
       </Typography>
 
       <div className=" ">
-        <div className=" mx-auto max-w-7xl flex justify-around ">
+        <div className=" mx-auto max-w-7xl flex flex-col md:flex-row px-4 md:px-0 gap-6 justify-around ">
           {/* Testimonial Card */}
           <TestimonialCard />
           <TestimonialCard />

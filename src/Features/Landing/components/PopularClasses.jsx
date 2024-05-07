@@ -5,7 +5,7 @@ import { Typography } from "@material-tailwind/react";
 
 function PopularClasses() {
   return (
-    <div className=" bg-gradient-to-tl from-daffodil to-tangerine py-12">
+    <div className=" bg-gradient-to-tl from-daffodil to-tangerine py-12 px-4 md:px-0">
         <Typography variant="h4" className=" text-center text-white mb-3">
           {" "}
           Popular Classes{" "}
@@ -21,7 +21,7 @@ function PopularClasses() {
           eveniet dolores obcaecati facilis beatae, non recusandae a.{" "}
         </Typography>
 
-        <div className=" flex max-w-7xl mx-auto justify-around ">
+        <div className=" flex flex-col md:flex-row items-center gap-8 md:gap-0 max-w-7xl mx-auto justify-around ">
           {/* class card */}
 
           <ClassCard />

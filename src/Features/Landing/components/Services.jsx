@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 
 function Services() {
   return (
-    <div className=" flex max-w-7xl mx-auto  ">
+    <div className=" flex flex-col md:flex-row max-w-7xl mx-auto pb-8 md:pb-0  ">
       <div className=" w-full">
         <img
           src="/images/teacher-edit.png"
@@ -12,10 +12,10 @@ function Services() {
         />
       </div>
 
-      <section className=" w-full flex flex-col gap-4 justify-center ">
-        <header className=" font-semibold text-5xl ">
+      <section className=" w-full flex flex-col gap-8 items-center px-5 md:px-0 justify-center ">
+        <header className=" font-semibold text-5xl text-center md:text-start ">
           {" "}
-          <span className=" text-tangerine"> Benefits </span> From Our Online
+          <span className=" text-daffodil"> Benefits </span> From Our Online
           Learning{" "}
         </header>
 
