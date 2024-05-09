@@ -11,6 +11,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase.config";
+import LogoComponent from "../../components/LogoComponent";
 
 
 export default function Login() {
@@ -80,14 +81,17 @@ export default function Login() {
   };
 
   return (
-    <div className=" flex min-h-screen  ">
-      <div className=" simple_pattern w-full min-h-screen flex justify-center items-center ">
+    <div className=" flex flex-col-reverse md:flex-row min-h-screen  ">
+      <div className=" simple_pattern w-full min-h-screen flex justify-center items-center px-1 md:px-0 ">
         <div className=" p-10 rounded-lg shadow-md md:min-w-[500px] bg-gray-300 ">
+          <div className=" mb-2">
+            <LogoComponent />
+          </div>
           <Typography variant="h2"> Sign in </Typography>
           <Typography>
             {" "}
-            Navigating Serenity with{" "}
-            <span className=" text-soft-blue font-bold ">MentalMaven</span>{" "}
+            Learn Online, Anywhere with {" "}
+            <span className=" text-soft-blue font-bold ">Shule-Mtandaoni</span>{" "}
           </Typography>
 
           {/* Dialog */}
@@ -125,10 +129,10 @@ export default function Login() {
               />
             </div>
 
-            <div className=" mt-5">
+            <a href="/student" className=" mt-5">
               <Button
                 className=" flex items-center justify-center bg-tangerine "
-                type="submit"
+                //type="submit"
                 variant="filled"
                 size="lg"
                 // color='blue'
@@ -138,7 +142,7 @@ export default function Login() {
               >
                 SIGN in{" "}
               </Button>
-            </div>
+            </a>
 
             <Link to={"/register"} className=" mt-4">
               <Button
@@ -165,10 +169,8 @@ export default function Login() {
 
         <div className="absolute bottom-10 left-10">
           <p className=" text-white bg-opacity-70 p-8 md:w-3/4 md:rounded-lg ">
-            " Mental Health is a not destination but{" "}
-            <span className=" text-soft-blue font-bold ">a process</span> . It's
-            about how you drive, not where you are going." <br /> -- Noam
-            Shpancer
+            " Technology is enabling a new paradigm in education. It's time to <span className=" text-soft-blue font-bold ">seize the opportunity</span> and make learning accessible, engaging, and personalized for every learner, regardless of location or socioeconomic status.{" "}
+             <br /> -- Salman Khan, founder of Khan Academy
           </p>
         </div>
       </div>

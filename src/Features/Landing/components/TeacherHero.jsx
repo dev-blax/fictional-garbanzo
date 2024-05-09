@@ -20,11 +20,11 @@ import {
 function TeacherHero() {
   return (
     <div className=" flex flex-col md:flex-row max-w-7xl mx-auto ">
-      <div className=" w-full flex flex-col text-center md:text-start px-4 md:px-0 py-4 md:py-0 justify-center gap-8">
+      <div className=" w-full flex flex-col  items-start text-center md:text-start px-4 md:px-0 py-4 md:py-0 justify-center gap-8">
         <div className="">
           <header className=" text-5xl font-bold mb-3 ">
-            If you are a Certified man then,{" "}
-            <span className=" text-daffodil"> Become a King </span>
+            If you are a Certified teacher then,{" "}
+            <span className=" text-daffodil"> Become an Instructor </span>
           </header>
 
           <p className=" text-gray-600">
@@ -95,7 +95,7 @@ function TeacherHero() {
             </List>
           </div>
 
-          <Button className=" bg-daffodil "> Become a King </Button>
+          <Button className=" bg-daffodil "> Become an Instructor </Button>
         </div>
       </div>
 

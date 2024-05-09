@@ -11,6 +11,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase.config";
+import LogoComponent from "../../components/LogoComponent";
 
 export default function Register() {
   const navigate = useNavigate();
@@ -69,14 +70,18 @@ export default function Register() {
   };
 
   return (
-    <div className=" flex flex-row-reverse min-h-screen ">
-      <div className=" simple_pattern min-h-screen w-full flex justify-center items-center ">
+    <div className=" flex flex-col-reverse md:flex-row-reverse min-h-screen ">
+      <div className=" simple_pattern min-h-screen w-full flex justify-center items-center px-1 md:px-0 ">
         <div className=" p-8 rounded-lg shadow-md md:min-w-[500px] bg-gray-300 ">
+          <LogoComponent />
           <Typography variant="h2"> Sign up </Typography>
           <Typography>
             {" "}
-            Navigating Serenity with{" "}
-            <span className=" text-soft-blue font-bold ">MentalMaven</span>{" "}
+            Learn Online, Anywhere with
+            <span className=" text-soft-blue font-bold ">
+              {" "}
+              Shule-Mtandaoni
+            </span>{" "}
           </Typography>
 
           {/* Dialog */}
@@ -100,13 +105,13 @@ export default function Register() {
                 value={username}
                 onChange={handleSetUsername}
                 variant="standard"
-                label="Username"
+                label="Full Name"
               />
             </div>
             <div>
               <Input
                 variant="standard"
-                label="Email"
+                label="Phone Number (Parent)"
                 value={email}
                 onChange={handleSetEmail}
                 type="email"
@@ -142,9 +147,15 @@ export default function Register() {
                 fullWidth
                 loading={loading}
               >
-                SIGN UP NOW{" "}
+                Enroll Now{" "}
               </Button>
             </div>
+
+            <p className=" text-center"> OR</p>
+
+            <a href="/instructor-register" className=" text-center">
+              <Button variant="text">Signup as an instructor</Button>
+            </a>
 
             <Link to={"/login"} className=" mt-4">
               <Button
@@ -161,16 +172,20 @@ export default function Register() {
         </div>
       </div>
 
-      <div className=" w-full relative ">
-        <img src="/images/student.jpg" alt="amazing-image" className="h-full w-full object-center object-cover" />
+      <div className=" w-full relative  ">
+        <img
+          src="https://images.pexels.com/photos/4261793/pexels-photo-4261793.jpeg"
+          alt="amazing-image"
+          className="h-full w-full object-center object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
 
         <div className="absolute bottom-10 left-10">
           <p className=" text-white bg-opacity-70 p-8 md:w-3/4 md:rounded-lg ">
-            "You do not have to be positive all the time. It's perfectly okay to
-            feel sad, angry, annoyed, frustrated, scared or anxious. Having
-            feelings doesn't make you a negative person. <span className=" text-soft-blue font-bold ">It makes you human</span>" <br /> --
-            Lori Deschene
+            "Online learning can open doors that would otherwise remain closed,
+            providing opportunities for growth and development that transcend
+            traditional boundaries." <br /> -- Sheryl Sandberg, The Chief
+            Operating Officer of Facebook
           </p>
         </div>
       </div>

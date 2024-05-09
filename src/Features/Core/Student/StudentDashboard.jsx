@@ -10,8 +10,10 @@ import {
 
 function StudentDashboard() {
   return (
-    <div className=" w-full flex">
-      {/* Banner Section */}
+    <div className=" w-full flex justify-center items-center">
+
+      <p> Dashboard Will Appear Here </p>
+      {/* Banner Section
       <BannerSection />
 
       <div className=" w-1/4">
@@ -28,7 +30,7 @@ function StudentDashboard() {
             icons={defaultLayoutIcons}
           />
         </MediaPlayer>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -12,8 +12,8 @@ function TestimonialCard() {
 
         <div>
           <p className=" text-sm "> Alexa Rodriguez </p>
-          <p className=" text-gray-500 text-xs"> Web Developer </p>
-          <p className=" text-xs"> Home </p>
+          <p className=" text-gray-500 text-xs"> CSEE Tanzania One (2024) </p>
+          <p className=" text-xs"> Feza Secondary </p>
         </div>
       </div>
 

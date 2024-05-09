@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import "./App.css";
 import StudentCore from "./Features/Core/Student/StudentCore";
 import StudentDashboard from "./Features/Core/Student/StudentDashboard";
+import InstructorRegister from "./Features/auth/InstructorRegister";
 
 export default function App() {
   return (
@@ -14,6 +15,8 @@ export default function App() {
       <Route path="/login" element={<Login />} />
 
       <Route path="/register" element={<Register />} />
+
+      <Route path="/instructor-register" element={<InstructorRegister />} />
 
       <Route path="/home" element={<Home />} />
 

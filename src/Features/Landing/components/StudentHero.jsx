@@ -26,7 +26,7 @@ function StudentHero() {
               className=" underline underline-offset-4 flex items-center gap-3"
             >
               {" "}
-              <FaAddressBook /> What's etech{" "}
+              <FaAddressBook /> What's Shule Mtandaoni{" "}
             </Button>
           </div>
         </div>
