@@ -4,7 +4,7 @@ import { StudentSidebar } from './Components/StudentSidebar'
 function StudentCore() {
   return (
     <div className=' flex '>
-      {/* <StudentSidebar /> */}
+      <StudentSidebar />
 
 
       <Outlet />

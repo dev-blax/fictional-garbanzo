@@ -18,10 +18,10 @@ import {
    
   export function StudentSidebar() {
     return (
-      <Card className=" h-full min-h-screen w-full max-w-[20rem] rounded-none bg-orange-50 p-4 shadow-xl shadow-blue-gray-900/5">
+      <Card className=" h-full min-h-screen w-full max-w-[20rem] rounded-none bg-gray-200 p-4 shadow-xl shadow-blue-gray-900/5">
         <div className="mb-2 p-4">
           <Typography variant="h5" color="blue-gray">
-            Sidebar
+            Mtandao
           </Typography>
         </div>
         <List>
@@ -35,7 +35,7 @@ import {
             <ListItemPrefix>
               <ShoppingBagIcon className="h-5 w-5" />
             </ListItemPrefix>
-            E-Commerce
+            My Collections
           </ListItem>
           <ListItem>
             <ListItemPrefix>
