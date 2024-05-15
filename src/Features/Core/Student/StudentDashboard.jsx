@@ -1,96 +1,101 @@
 import React from "react";
-import BannerSection from "./Components/BannerSection";
-import "@vidstack/react/player/styles/default/theme.css";
-import "@vidstack/react/player/styles/default/layouts/video.css";
-import { MediaPlayer, MediaProvider } from "@vidstack/react";
-import {
-  defaultLayoutIcons,
-  DefaultVideoLayout,
-} from "@vidstack/react/player/layouts/default";
-import { MdArrowBackIos } from "react-icons/md";
+import CourseCard from "./Components/CourseCard";
+import StudentHeader from "./Components/StudentHeader";
 
-const CourseVideos = [
+const CoursesList = [
   {
-    title: "Introduction to the course",
-    thumbnail: "/images/teach.jpg",
+    title: "Linear Programming",
+    instructor: "Madam Martha",
+    price: "Free",
+    duration: "4 hours",
+    tags: ["O-level", "Basic Mathematics", "Algebra"],
   },
   {
-    title: "What are Metrics",
-    thumbnail: "/images/teach.jpg",
+    title: "Differential Equations",
+    instructor: "Joseph Ismail",
+    price: "Free",
+    duration: "4 hours",
+    tags: ["A-level", "Basic Mathematics", "Differential equation"],
   },
   {
-    title: "Google Analytics",
-    thumbnail: "/images/teach.jpg",
+    title: "Projectile Motion",
+    instructor: "Young Teacher",
+    price: "Free",
+    duration: "4 hours",
+    tags: ["A-level", "Advanced Physics", "Physical"],
   },
   {
-    title: "What is SEO",
-    thumbnail: "/images/teach.jpg",
+    title: "Human Rights",
+    instructor: "Simon Paul",
+    price: "Free",
+    duration: "4 hours",
+    tags: ["O-level", "Basic Mathematics", "Algebra"],
   },
 ];
 
-const renderVideos = CourseVideos.map((courseVideo) => (
-  <div>
-    <img
-      src={courseVideo.thumbnail}
-      className=" h-32 w-64 object-cover object-center rounded-md "
-      alt="image_class"
-    />
-    <p className=" font-bold my-2 text-lg"> {courseVideo.title} </p>
-  </div>
+const renderCourses = CoursesList.map((course) => (
+  <CourseCard
+    title={course.title}
+    instructor={course.instructor}
+    price={course.price}
+    duration={course.duration}
+    tags={course.tags}
+  />
 ));
 
 function StudentDashboard() {
   return (
-    <div className=" w-full px-3 ">
-      <div className=" flex gap-1 items-center mt-2">
-        <MdArrowBackIos className=" text-tangerine" />
-        <span className=" text-tangerine " > Go Back </span>
+    <div className=" bg-gray-100">
+
+      <StudentHeader />
+      
+      <p className=" px-4 text-sm font-bold text-gray-700 ">
+        {" "}
+        New Courses{" "}
+        <span className=" hover:underline underline-offset-2 cursor-pointer text-gray-100 ">
+          {" "}
+          See All{" "}
+        </span>{" "}
+      </p>
+      <div className=" w-full p-4 grid grid-cols-1 md:grid-cols-3 gap-8  ">
+        {renderCourses}
       </div>
 
-      <header className=" font-bold text-2xl mt-3 mb-5"> Product Analysis </header>
+      <p className=" px-4 text-sm font-bold text-gray-700 ">
+        {" "}
+        Primary School Courses{" "}
+        <span className=" hover:underline underline-offset-2 cursor-pointer text-gray-100 ">
+          {" "}
+          See All{" "}
+        </span>{" "}
+      </p>
+      <div className=" w-full p-4 grid grid-cols-1 md:grid-cols-3 gap-8  ">
+        {renderCourses}
+      </div>
 
-      <MediaPlayer
-        playsInline
-          title="Sprite Fight"
-          src="https://videos.pexels.com/video-files/1580507/1580507-sd_640_360_30fps.mp4"
-        >
-          <MediaProvider />
-          <DefaultVideoLayout
-            thumbnails="https://files.vidstack.io/sprite-fight/thumbnails.vtt"
-            icons={defaultLayoutIcons}
-          />
-        </MediaPlayer>
+      <p className=" px-4 text-sm font-bold text-gray-700 ">
+        {" "}
+        O-Level Courses{" "}
+        <span className=" hover:underline underline-offset-2 cursor-pointer text-gray-100 ">
+          {" "}
+          See All{" "}
+        </span>{" "}
+      </p>
+      <div className=" w-full p-4 grid grid-cols-1 md:grid-cols-3 gap-8  ">
+        {renderCourses}
+      </div>
 
-      <section>
-        <p>All Lessons</p>
-
-        <div className=" flex gap-4">
-
-          {renderVideos}
-          
-
-          
-        </div>
-      </section>
-
-      {/* Banner Section
-      <BannerSection />
-
-      <div className=" w-1/4">
-        <header> Kings </header>
-
-        <MediaPlayer
-        playsInline
-          title="Sprite Fight"
-          src="https://videos.pexels.com/video-files/1580507/1580507-sd_640_360_30fps.mp4"
-        >
-          <MediaProvider />
-          <DefaultVideoLayout
-            thumbnails="https://files.vidstack.io/sprite-fight/thumbnails.vtt"
-            icons={defaultLayoutIcons}
-          />
-        </MediaPlayer>
-      </div> */}
+      <p className=" px-4 text-sm font-bold text-gray-700 ">
+        {" "}
+        A-Level Courses{" "}
+        <span className=" hover:underline underline-offset-2 cursor-pointer text-gray-100 ">
+          {" "}
+          See All{" "}
+        </span>{" "}
+      </p>
+      <div className=" w-full p-4 grid grid-cols-1 md:grid-cols-3 gap-8  ">
+        {renderCourses}
+      </div>
     </div>
   );
 }

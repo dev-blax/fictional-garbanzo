@@ -10,34 +10,40 @@ import {
   import {
     PresentationChartBarIcon,
     ShoppingBagIcon,
+    
     UserCircleIcon,
     Cog6ToothIcon,
     InboxIcon,
     PowerIcon,
+    CalculatorIcon
   } from "@heroicons/react/24/solid";
    
   export function StudentSidebar() {
     return (
-      <Card className=" h-full min-h-screen w-full max-w-[20rem] rounded-none bg-gray-200 p-4 shadow-xl shadow-blue-gray-900/5">
+      <Card className=" hidden md:block sticky top-0 h-full min-h-screen w-full max-w-[20rem] rounded-none bg-tangerine/80 text-white p-4 shadow-xl shadow-blue-gray-900/5">
         <div className="mb-2 p-4">
-          <Typography variant="h5" color="blue-gray">
-            Mtandao
+          <Typography variant="h5" color="white">
+            Shule Mtandaoni
           </Typography>
         </div>
         <List>
-          <ListItem>
+          <a href="/student/">
+          <ListItem className=" text-white">
             <ListItemPrefix>
               <PresentationChartBarIcon className="h-5 w-5" />
             </ListItemPrefix>
             Dashboard
           </ListItem>
-          <ListItem>
+          </a>
+          <a href="/student/enrolled">
+          <ListItem className=" text-white">
             <ListItemPrefix>
-              <ShoppingBagIcon className="h-5 w-5" />
+              <CalculatorIcon className="h-5 w-5" />
             </ListItemPrefix>
-            My Collections
+            My Classes
           </ListItem>
-          <ListItem>
+          </a>
+          {/* <ListItem>
             <ListItemPrefix>
               <InboxIcon className="h-5 w-5" />
             </ListItemPrefix>
@@ -45,20 +51,23 @@ import {
             <ListItemSuffix>
               <Chip value="14" size="sm" variant="ghost" color="blue-gray" className="rounded-full" />
             </ListItemSuffix>
-          </ListItem>
-          <ListItem>
+          </ListItem> */}
+          <a href="/teacher/newCourse">
+          <ListItem className=" text-white">
             <ListItemPrefix>
               <UserCircleIcon className="h-5 w-5" />
             </ListItemPrefix>
-            Profile
+            Teacher Classes
           </ListItem>
-          <ListItem>
+          </a>
+          
+          <ListItem className=" text-white">
             <ListItemPrefix>
               <Cog6ToothIcon className="h-5 w-5" />
             </ListItemPrefix>
             Settings
           </ListItem>
-          <ListItem>
+          <ListItem className=" text-white">
             <ListItemPrefix>
               <PowerIcon className="h-5 w-5" />
             </ListItemPrefix>
