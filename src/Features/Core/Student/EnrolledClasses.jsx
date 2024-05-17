@@ -1,6 +1,7 @@
 import React from "react";
 import StudentHeader from "./Components/StudentHeader";
 import CourseCard from "./Components/CourseCard";
+import { CoreNavbar } from "./Components/CoreNavbar";
 
 const EnrolledClassesList = [
   {
@@ -46,6 +47,7 @@ const renderCourses = EnrolledClassesList.map((course) => (
 function EnrolledClasses() {
   return (
     <div className=" bg-gray-200 w-full px-4">
+      <CoreNavbar />
       <StudentHeader />
 
       <div>

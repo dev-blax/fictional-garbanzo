@@ -16,6 +16,7 @@ import {
   ListItemPrefix,
 
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 function TeacherHero() {
   return (
@@ -95,7 +96,9 @@ function TeacherHero() {
             </List>
           </div>
 
+          <a href={'/instructor-register'}>
           <Button className=" bg-daffodil "> Become an Instructor </Button>
+          </a>
         </div>
       </div>
 

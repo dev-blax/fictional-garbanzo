@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
   Typography,
   Button,
   IconButton,
@@ -40,7 +39,7 @@ export function LoomNavbar() {
         </svg>
 
         <a href="#" className="flex items-center">
-          Lasers
+          Benefits
         </a>
       </Typography>
       <Typography
@@ -64,7 +63,7 @@ export function LoomNavbar() {
           />
         </svg>
         <a href="#" className="flex items-center">
-          Kings
+          Popular
         </a>
       </Typography>
       <Typography
@@ -86,7 +85,7 @@ export function LoomNavbar() {
           />
         </svg>
         <a href="#" className="flex items-center">
-          Offers
+          Perks
         </a>
       </Typography>
       <Typography
@@ -110,7 +109,7 @@ export function LoomNavbar() {
           />
         </svg>
         <a href="#" className="flex items-center">
-          Contact
+          Testimonials
         </a>
       </Typography>
     </ul>
@@ -128,26 +127,26 @@ export function LoomNavbar() {
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <div className="flex items-center gap-x-1">
-          <Button
-            variant="outlined"
-            color="orange"
-            size="sm"
-            className="hidden lg:inline-block"
-          >
-            <a href="/login">
+          <a href="/login">
+            <Button
+              variant="outlined"
+              color="orange"
+              size="sm"
+              className="hidden lg:inline-block"
+            >
               <span>Log In</span>
-            </a>
-          </Button>
-          <Button
-            variant="gradient"
-            size="sm"
-            color="orange"
-            className="hidden lg:inline-block"
-          >
-            <a href="/register">
+            </Button>
+          </a>
+          <a href="/register">
+            <Button
+              variant="gradient"
+              size="sm"
+              color="orange"
+              className="hidden lg:inline-block"
+            >
               <span>Register</span>
-            </a>
-          </Button>
+            </Button>
+          </a>
         </div>
         <IconButton
           variant="text"
@@ -191,12 +190,26 @@ export function LoomNavbar() {
         <div className="container mx-auto">
           {navList}
           <div className="flex items-center gap-x-1">
-            <Button fullWidth variant="text" size="sm" className="">
-              <span>Log In</span>
-            </Button>
-            <Button fullWidth variant="gradient" size="sm" className="">
-              <span>Free Trial</span>
-            </Button>
+            <a href="/login">
+              <Button
+                variant="outlined"
+                color="orange"
+                size="sm"
+                className="hidden lg:inline-block"
+              >
+                <span>Log In</span>
+              </Button>
+            </a>
+            <a href="/register">
+              <Button
+                variant="gradient"
+                size="sm"
+                color="orange"
+                className="hidden lg:inline-block"
+              >
+                <span>Register</span>
+              </Button>
+            </a>
           </div>
         </div>
       </Collapse>

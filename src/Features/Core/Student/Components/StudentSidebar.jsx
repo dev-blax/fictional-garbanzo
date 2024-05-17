@@ -40,7 +40,7 @@ import {
             <ListItemPrefix>
               <CalculatorIcon className="h-5 w-5" />
             </ListItemPrefix>
-            My Classes
+            Enrolled Classes
           </ListItem>
           </a>
           {/* <ListItem>
